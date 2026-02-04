@@ -1,21 +1,41 @@
-# bun-react-tailwind-template
+# Nakovalna 🛠️
 
-To install dependencies:
+Кузнечный калькулятор для сборки [**TerraFirmaGreg**](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-modern).
 
-```bash
-bun install
-```
+## Использование
 
-To start a development server:
+Интерфейс интуитивно понятен и не требует инструкций, удачной ковки и послушного металла!
 
-```bash
-bun dev
-```
+## Локальный запуск
+1. Клонировать репозиторий
+   ```bash
+   git clone https://github.com/Ewgentor/nakovalna.git
+   cd nakovalna
+   ```
+2. Установить [Bun](https://bun.com/)
+3. Установить зависимости
 
-To run for production:
+   ```bash
+   bun install
+   ```
+4. Запустить dev-сервер:
 
-```bash
-bun start
-```
+   ```bash
+   bun dev
+   ```
 
-This project was created using `bun init` in bun v1.3.8. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+   или prod-сервер:
+
+   ```bash
+   bun start
+   ```
+
+## Планы
+- Перевод на английский.
+- Деплой.
+- Выбор темы.
+- Возможность выбора начального положения больше конечного.
+
+## Известные проблемы
+
+- Иногда игровое меню отображает неверный порядок 3 последних действий, калькулятор тут не при чём, честно
