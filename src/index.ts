@@ -11,10 +11,15 @@ const server = serve({
       async POST(req) {
         const payload = await req.json();
         const actions = computeActions(payload.min, payload.max);
-        return Response.json({
-          actions: actions,
-        })
-      }
+        const res = new Response(JSON.stringify({ actions: actions }), {
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "POST",
+          },
+        });
+        return res;
+      },
     },
   },
 
